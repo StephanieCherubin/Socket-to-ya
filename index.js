@@ -6,9 +6,9 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html')
 });
 
-io.on('connection', function(socket){
+io.on('connection', function(socket) {
   console.log('a user connected');
-  socket.broadcast.emit('hi');
+  // socket.broadcast.emit('hi');
   socket.on('disconnect', function () {
     console.log('user disconnected');
   });
@@ -17,7 +17,7 @@ io.on('connection', function(socket){
   });
 });
 
-io.emit('some event', { for: 'everyone' });
+// io.emit('some event', { for: 'everyone' });
 
 http.listen(3000, function () {
   console.log('listening on *:3000');
