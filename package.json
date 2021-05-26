@@ -1,5 +1,5 @@
 {
-  "name": "fit-club",
+  "name": "socket-to-ya",
   "version": "1.0.0",
   "description": "my first socket.io app",
   "main": "server.js",
